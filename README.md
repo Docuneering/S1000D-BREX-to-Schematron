@@ -10,7 +10,7 @@ Once configured, click the 'Check Completeness' icon to validate you Data Module
 
 ![Screenshot](img/arbortext-editor-validation-v1.png)
 
-## Oxygen XML
+## Oxygen XML Editor
 
 You need to configure a validation scenario within your framework. Once setup, Oxygen XML Editor implements a 'live' or 'on-the-fly' validation process:
 
