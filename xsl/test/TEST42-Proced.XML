@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- S1000D Issue 4.2 [xml_schema_flat], Test Data -->
+<!-- ===========================================================================================
+   Copyright (c) 2024 Docuneering Ltd. 
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+=========================================================================================== -->
+<dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+	<identAndStatusSection>
+		<dmAddress>
+			<dmIdent>
+				<!-- TEST BREX -->
+				<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="041" infoCodeVariant="A" 
+					itemLocationCode="A"/><!-- BREX TEST -->
+				<language countryIsoCode="US" languageIsoCode="sx"/><!-- TEST BREX -->
+				<issueInfo issueNumber="001" inWork="00"/>
+			</dmIdent>
+			<dmAddressItems>
+				<issueDate day="31" month="12" year="2023"/>
+				<dmTitle>
+					<techName>Docuneering BREX Test</techName>
+					<infoName>Other procedures to clean</infoName>
+				</dmTitle>
+			</dmAddressItems>
+		</dmAddress>
+		<dmStatus issueType="changed">
+			<security securityClassification="01" caveat="cv01"/><!-- TEST BREX -->
+			<dataRestrictions>
+				<restrictionInstructions>
+					<dataDistribution>For Docuneering testing purposes only.</dataDistribution>
+					<!-- TEST BREX -->
+				</restrictionInstructions>
+				<restrictionInfo>
+					<copyright>
+						<copyrightPara>Copyright (C) 2024 Docuneering Ltd., All rights reserved</copyrightPara>
+					</copyright>
+				</restrictionInfo>
+			</dataRestrictions>
+			<responsiblePartnerCompany enterpriseCode="X1234">
+				<enterpriseName>Docuneering Ltd</enterpriseName>
+			</responsiblePartnerCompany>
+			<originator enterpriseCode="X1234">
+				<enterpriseName>Docuneering Ltd</enterpriseName>
+			</originator>
+			<applic>
+				<displayText>
+					<simplePara>All</simplePara>
+				</displayText>
+			</applic>
+			<brexDmRef>
+				<dmRef>
+					<dmRefIdent>
+						<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+							assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" 
+							itemLocationCode="D"/>
+					</dmRefIdent>
+				</dmRef>
+			</brexDmRef>
+			<qualityAssurance>
+				<firstVerification verificationType="tabtop"/>
+			</qualityAssurance>
+			<skillLevel skillLevelCode="sk05"/><!-- TEST BREX -->
+		</dmStatus>
+	</identAndStatusSection>
+	<content><!-- TEST BREX -->
+		<refs>
+			<dmRef>
+				<dmRefIdent>
+					<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="041" infoCodeVariant="A" itemLocationCode="A"/>
+				</dmRefIdent>
+			</dmRef>
+		</refs>
+		<procedure>
+			<preliminaryRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+				<reqPersons>
+					<person man="A">
+						<personCategory personCategoryCode="Chemical technician"/>
+						<personSkill skillLevelCode="sk02"/>
+						<trade>Bike cleaner</trade>
+						<estimatedTime unitOfMeasure="h">1,0</estimatedTime>
+					</person>
+				</reqPersons>
+				<reqSupportEquips>
+					<noSupportEquips/>
+				</reqSupportEquips>
+				<reqSupplies>
+					<noSupplies/>
+				</reqSupplies>
+				<reqSpares>
+					<noSpares/>
+				</reqSpares>
+				<reqSafety>
+					<noSafety/>
+				</reqSafety>
+			</preliminaryRqmts>
+			<mainProcedure>
+				<proceduralStep>
+					<title>S1000D Issue 4.2 - Proced</title>
+					<para>Some text.</para>
+				</proceduralStep>
+			</mainProcedure>
+			<closeRqmts>
+				<reqCondGroup>
+					<noConds/>
+				</reqCondGroup>
+			</closeRqmts>
+		</procedure>
+	</content>
+</dmodule>
