@@ -6,9 +6,9 @@ The resultant Schematron file can then be used to validate you S1000D Data Modul
 
 ## Arbortext Editor
 
-Once configured, click the **Check Completeness** icon ![Arbortext Completeness Check icon.](img/arbortext-check-completeness-v1.png) to validate you Data Module
+Once configured, click the **Check Completeness** icon ![Arbortext Completeness Check icon.](assets/img/arbortext-check-completeness-v1.png) to validate you Data Module
 
-![Screenshot](img/arbortext-editor-validation-v1.png)
+![Screenshot](assets/img/arbortext-editor-validation-v1.png)
 
 Please contact [Docuneering Ltd.](https://www.docuneering.com/contact/) for details on how to configure BREX/Schematron validation in Arbortext Editor.
 
@@ -16,7 +16,7 @@ Please contact [Docuneering Ltd.](https://www.docuneering.com/contact/) for deta
 
 You need to configure a validation scenario within your framework. Once setup, Oxygen XML Editor implements a **live** or **on-the-fly** validation process:
 
-![Screenshot](img/oxygen-xml-validation-v1.png)
+![Screenshot](assets/img/oxygen-xml-validation-v1.png)
 
 Please contact [Docuneering Ltd.](https://www.docuneering.com/contact/) for details on how to configure a validation scenario within Oxygen XML Editor.
 
