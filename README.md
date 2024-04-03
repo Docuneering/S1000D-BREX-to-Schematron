@@ -2,7 +2,7 @@
 
 The `S1000D-BREX-to-Schematron.xsl` file will convert a standard S1000D BREX into a Schematron file.
 
-The resultant Schematron file can then be used to validate you S1000D Data Modules source data in any number of different XML editors.
+The resultant Schematron file can then be used to validate you S1000D Data Modules source data in a number of different XML editors.
 
 ## Arbortext Editor
 
