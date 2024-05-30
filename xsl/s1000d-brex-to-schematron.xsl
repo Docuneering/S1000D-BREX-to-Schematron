@@ -27,7 +27,7 @@
       indent="yes"/>
    
    <xsl:strip-space elements="*"/>
-
+   
    <xsl:template match="/">
       <xsl:choose>
          
@@ -50,7 +50,7 @@
                   <xsl:variable name="objectPath">
                      <xsl:value-of select="replace(objectPath,'&quot;','''')"/>
                   </xsl:variable>
-
+                  
                   <!-- Check if these rules are schema specific -->
                   <xsl:variable name="rulesContext">
                      <xsl:choose>
@@ -64,7 +64,7 @@
                         </xsl:otherwise>
                      </xsl:choose>
                   </xsl:variable>
-
+                  
                   <!-- Create the "objectValueSingle" variable -->
                   <xsl:variable name="objectValueSingle">
                      <xsl:for-each select="objectValue[@valueForm='single']">
@@ -112,7 +112,7 @@
                      <xsl:value-of select="$objectValueSingle"/>
                      <xsl:value-of select="$objectValuePattern"/>
                   </xsl:variable>
-
+                  
                   <!-- Select the @allowedObjectFlag= '0', '1' or '2' -->
                   <xsl:choose>
                      
@@ -280,7 +280,7 @@
                               
                               <!-- Build: Convert "range" values into "<sch:let> elements -->
                               <xsl:call-template name="buildRange"/>
-
+                              
                               <!-- Assert: If it doesn't finds it, it reports the message -->
                               <sch:assert>
                                  <xsl:attribute name="test">
@@ -317,7 +317,7 @@
             <xsl:text>ERROR: Please select an S1000D BREX Data Module file to convert.</xsl:text>
          </xsl:otherwise>
       </xsl:choose>
-
+   
    </xsl:template>
    
    
