@@ -16,177 +16,177 @@
    limitations under the License.
 =========================================================================================== -->
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/brex.xsd">
-	<identAndStatusSection>
-		<dmAddress>
-			<dmIdent>
-				<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
-				<language languageIsoCode="en" countryIsoCode="US"/>
-				<issueInfo issueNumber="001" inWork="00"/>
-			</dmIdent>
-			<dmAddressItems>
-				<issueDate day="31" month="12" year="2023"/>
-				<dmTitle>
-					<techName>TEST42</techName>
-					<infoName>Business rules</infoName>
-				</dmTitle>
-			</dmAddressItems>
-		</dmAddress>
-		<dmStatus>
-			<security securityClassification="01"/>
-			<responsiblePartnerCompany enterpriseCode="X1234">
-				<enterpriseName>Docuneering Ltd</enterpriseName>
-			</responsiblePartnerCompany>
-			<originator enterpriseCode="X1234">
-				<enterpriseName>Docuneering Ltd</enterpriseName>
-			</originator>
-			<applic>
-				<displayText>
-					<simplePara>All</simplePara>
-				</displayText>
-			</applic>
-			<brexDmRef>
-				<dmRef>
-					<dmRefIdent>
-						<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-							assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A"
-							itemLocationCode="D"/>
-						<issueInfo issueNumber="001" inWork="00"/>
-					</dmRefIdent>
-				</dmRef>
-			</brexDmRef>
-			<qualityAssurance>
-				<firstVerification verificationType="tabtop"/>
-			</qualityAssurance>
-		</dmStatus>
-	</identAndStatusSection>
-	<content>
-		<brex>
-			<commonInfo>
-				<para>This BREX data module gives the rules to test the different that apply to the PRODUCT. The rules are based on the PRODUCTGROUP rules.</para>
-			</commonInfo>
-			<!-- ==== To Do ==== -->
-			<!--<snsRules>
-				<snsDescr>
-					<snsSystem>
-						<snsCode>30</snsCode>
-						<snsTitle>Ice and rain protection</snsTitle>
-					</snsSystem>
-				</snsDescr>
-			</snsRules>-->
-			
-			<!-- Rules applicable to "descript" Schema -->
-			<contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
-				<structureObjectRuleGroup>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- Element -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//dmAddress/dmIdent/identExtension</objectPath>
-						<objectUse>(Descript-01)-Element &lt;identExtension&gt; must NOT be used</objectUse>
-					</structureObjectRule>
-					<!-- Attribute -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//security/@commercialClassification</objectPath>
-						<objectUse>(Descript-02)-Attributes @commercialClassification must NOT be used</objectUse>
-					</structureObjectRule>
-					<!-- "1" - Yes, the object must be included in the context concerned -->
-					<!-- Element -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="1">//content/refs</objectPath>
-						<objectUse>(Descript-03)-Element &lt;refs&gt; MUST be used</objectUse>
-					</structureObjectRule>
-					<!-- Attribute -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="1">//security/@caveat</objectPath>
-						<objectUse>(Descript-04)-Attribute @caveat MUST be used</objectUse>
-					</structureObjectRule>
-					<!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="2">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
-						<objectUse>(Descript-05)-Attribute @infoCode - invalid value used.</objectUse>
-					   <objectValue valueTailoring="closed" valueForm="single" valueAllowed="018">Introduction</objectValue>
-					   <objectValue valueTailoring="closed" valueForm="range" valueAllowed="040~043">Use iaw S1000D Iss 4.2</objectValue>
-					</structureObjectRule>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- With a list of NOT ALLOWED values -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//@languageIsoCode</objectPath>
-						<objectUse>(Descript-06)-Attribute @languageIsoCode must not be 'en'</objectUse>
-						<objectValue valueTailoring="closed" valueForm="single" valueAllowed="en"></objectValue>
-					</structureObjectRule>
-				   <!-- Etc. -->
-					
-				</structureObjectRuleGroup>
-			</contextRules>
-			<!-- Rules applicable to "proced" Schema -->
-			<contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
-				<structureObjectRuleGroup>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- Element -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//content/refs</objectPath>
-						<objectUse>(Proced-01)-Element &lt;refs&gt; must NOT be used</objectUse>
-					</structureObjectRule>
-					<!-- Attribute -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//security/@caveat</objectPath>
-						<objectUse>(Proced-02)-Attribute @caveat must NOT be used</objectUse>
-					</structureObjectRule>
-					<!-- "1" - Yes, the object must be included in the context concerned -->
-					<!-- Element -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="1">//dmAddress/dmIdent/identExtension</objectPath>
-						<objectUse>(Proced-03)-Element &lt;identExtension&gt; MUST be used</objectUse>
-					</structureObjectRule>
-					<!-- Attribute -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="1">//security/@commercialClassification</objectPath>
-						<objectUse>(Proced-04)-Attribute @commercialClassification MUST be used</objectUse>
-					</structureObjectRule>
-					<!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<!-- Attribute -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="2">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
-						<objectUse>(Proced-05)-Attribute @infoCode - invalid value used.</objectUse>
-					   <objectValue valueTailoring="closed" valueForm="single" valueAllowed="520">Remove procedure</objectValue>
-					   <objectValue valueTailoring="closed" valueForm="range" valueAllowed="720~724">Use iaw S1000D Iss 4.2</objectValue>
-					   <objectValue valueTailoring="closed" valueForm="single" valueAllowed="920">Remove and install procedure</objectValue>
-					</structureObjectRule>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- With a list of NOT ALLOWED values -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//@languageIsoCode</objectPath>
-						<objectUse>(Proced-06)-Attribute @languageIsoCode must not be 'sx'</objectUse>
-						<objectValue valueTailoring="closed" valueForm="single" valueAllowed="sx"></objectValue>
-					</structureObjectRule>
-				   <!-- Etc. -->
-					
-				</structureObjectRuleGroup>
-			</contextRules>
-			<!-- Rules applicable to all Schemas -->
-			<contextRules>
-				<structureObjectRuleGroup>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="0">//restrictionInstructions[not(matches(dataDisclosure, '^[\S]+'))]</objectPath>
-						<objectUse>(All-01)-If the &lt;restrictionInstructions&gt; element is used, the &lt;dataDisclosure&gt; element is required and must have content (not blank).</objectUse>
-					</structureObjectRule>
-				   <!-- "2" - (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<structureObjectRule>
-						<objectPath allowedObjectFlag="2">//@skillLevelCode</objectPath>
-						<objectUse>(All-02)-Attribute @skillLevelCode must not be 'sk01', 'sk02' or 'sk03' only</objectUse>
-						<objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk01">Basic</objectValue>
-						<objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk02">Medium</objectValue>
-						<objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk03">Advanced</objectValue>
-					</structureObjectRule>
-				   <!-- Etc. -->
-					
-				</structureObjectRuleGroup>
-			</contextRules>
-		</brex>
-	</content>
+   xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/brex.xsd">
+   <identAndStatusSection>
+      <dmAddress>
+         <dmIdent>
+            <dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+               assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" itemLocationCode="D"/>
+            <language languageIsoCode="en" countryIsoCode="US"/>
+            <issueInfo issueNumber="001" inWork="00"/>
+         </dmIdent>
+         <dmAddressItems>
+            <issueDate day="31" month="12" year="2023"/>
+            <dmTitle>
+               <techName>TEST42</techName>
+               <infoName>Business rules</infoName>
+            </dmTitle>
+         </dmAddressItems>
+      </dmAddress>
+      <dmStatus>
+         <security securityClassification="01"/>
+         <responsiblePartnerCompany enterpriseCode="X1234">
+            <enterpriseName>Docuneering Ltd</enterpriseName>
+         </responsiblePartnerCompany>
+         <originator enterpriseCode="X1234">
+            <enterpriseName>Docuneering Ltd</enterpriseName>
+         </originator>
+         <applic>
+            <displayText>
+               <simplePara>All</simplePara>
+            </displayText>
+         </applic>
+         <brexDmRef>
+            <dmRef>
+               <dmRefIdent>
+                  <dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+                     assyCode="0000" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A"
+                     itemLocationCode="D"/>
+                  <issueInfo issueNumber="001" inWork="00"/>
+               </dmRefIdent>
+            </dmRef>
+         </brexDmRef>
+         <qualityAssurance>
+            <firstVerification verificationType="tabtop"/>
+         </qualityAssurance>
+      </dmStatus>
+   </identAndStatusSection>
+   <content>
+      <brex>
+         <commonInfo>
+            <para>This BREX data module gives the rules to test the different that apply to the PRODUCT. The rules are based on the PRODUCTGROUP rules.</para>
+         </commonInfo>
+         <!-- ==== To Do ==== -->
+         <!--<snsRules>
+            <snsDescr>
+               <snsSystem>
+                  <snsCode>30</snsCode>
+                  <snsTitle>Ice and rain protection</snsTitle>
+               </snsSystem>
+            </snsDescr>
+         </snsRules>-->
+         
+         <!-- Rules applicable to "descript" Schema -->
+         <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+            <structureObjectRuleGroup>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- Element -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//dmAddress/dmIdent/identExtension</objectPath>
+                  <objectUse>(Descript-01)-Element &lt;identExtension&gt; must NOT be used</objectUse>
+               </structureObjectRule>
+               <!-- Attribute -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//security/@commercialClassification</objectPath>
+                  <objectUse>(Descript-02)-Attributes @commercialClassification must NOT be used</objectUse>
+               </structureObjectRule>
+               <!-- "1" - Yes, the object must be included in the context concerned -->
+               <!-- Element -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="1">//content/refs</objectPath>
+                  <objectUse>(Descript-03)-Element &lt;refs&gt; MUST be used</objectUse>
+               </structureObjectRule>
+               <!-- Attribute -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="1">//security/@caveat</objectPath>
+                  <objectUse>(Descript-04)-Attribute @caveat MUST be used</objectUse>
+               </structureObjectRule>
+               <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="2">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
+                  <objectUse>(Descript-05)-Attribute @infoCode - invalid value used.</objectUse>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="018">Introduction</objectValue>
+                  <objectValue valueTailoring="closed" valueForm="range" valueAllowed="040~043">Use iaw S1000D Iss 4.2</objectValue>
+               </structureObjectRule>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- With a list of NOT ALLOWED values -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//@languageIsoCode</objectPath>
+                  <objectUse>(Descript-06)-Attribute @languageIsoCode must not be 'en'</objectUse>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="en"></objectValue>
+               </structureObjectRule>
+               <!-- Etc. -->
+               
+            </structureObjectRuleGroup>
+         </contextRules>
+         <!-- Rules applicable to "proced" Schema -->
+         <contextRules rulesContext="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/proced.xsd">
+            <structureObjectRuleGroup>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- Element -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//content/refs</objectPath>
+                  <objectUse>(Proced-01)-Element &lt;refs&gt; must NOT be used</objectUse>
+               </structureObjectRule>
+               <!-- Attribute -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//security/@caveat</objectPath>
+                  <objectUse>(Proced-02)-Attribute @caveat must NOT be used</objectUse>
+               </structureObjectRule>
+               <!-- "1" - Yes, the object must be included in the context concerned -->
+               <!-- Element -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="1">//dmAddress/dmIdent/identExtension</objectPath>
+                  <objectUse>(Proced-03)-Element &lt;identExtension&gt; MUST be used</objectUse>
+               </structureObjectRule>
+               <!-- Attribute -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="1">//security/@commercialClassification</objectPath>
+                  <objectUse>(Proced-04)-Attribute @commercialClassification MUST be used</objectUse>
+               </structureObjectRule>
+               <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <!-- Attribute -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="2">//dmAddress/dmIdent/dmCode/@infoCode</objectPath>
+                  <objectUse>(Proced-05)-Attribute @infoCode - invalid value used.</objectUse>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="520">Remove procedure</objectValue>
+                  <objectValue valueTailoring="closed" valueForm="range" valueAllowed="720~724">Use iaw S1000D Iss 4.2</objectValue>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="920">Remove and install procedure</objectValue>
+               </structureObjectRule>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- With a list of NOT ALLOWED values -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//@languageIsoCode</objectPath>
+                  <objectUse>(Proced-06)-Attribute @languageIsoCode must not be 'sx'</objectUse>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="sx"></objectValue>
+               </structureObjectRule>
+               <!-- Etc. -->
+               
+            </structureObjectRuleGroup>
+         </contextRules>
+         <!-- Rules applicable to all Schemas -->
+         <contextRules>
+            <structureObjectRuleGroup>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="0">//restrictionInstructions[not(matches(dataDisclosure, '^[\S]+'))]</objectPath>
+                  <objectUse>(All-01)-If the &lt;restrictionInstructions&gt; element is used, the &lt;dataDisclosure&gt; element is required and must have content (not blank).</objectUse>
+               </structureObjectRule>
+               <!-- "2" - (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <structureObjectRule>
+                  <objectPath allowedObjectFlag="2">//@skillLevelCode</objectPath>
+                  <objectUse>(All-02)-Attribute @skillLevelCode must not be 'sk01', 'sk02' or 'sk03' only</objectUse>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk01">Basic</objectValue>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk02">Medium</objectValue>
+                  <objectValue valueTailoring="closed" valueForm="single" valueAllowed="sk03">Advanced</objectValue>
+               </structureObjectRule>
+               <!-- Etc. -->
+               
+            </structureObjectRuleGroup>
+         </contextRules>
+      </brex>
+   </content>
 </dmodule>

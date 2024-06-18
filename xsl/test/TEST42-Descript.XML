@@ -16,81 +16,81 @@
    limitations under the License.
 =========================================================================================== -->
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
-	<identAndStatusSection>
-		<dmAddress>
-			<dmIdent>
-			   <identExtension extensionProducer="X1234" extensionCode="12345"/><!-- BREX TEST -->
-				<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="039" infoCodeVariant="A" 
-					itemLocationCode="A"/><!-- BREX TEST -->
-			   <language countryIsoCode="US" languageIsoCode="en"/><!-- BREX TEST -->
-				<issueInfo issueNumber="001" inWork="00"/>
-			</dmIdent>
-			<dmAddressItems>
-				<issueDate day="31" month="12" year="2023"/>
-				<dmTitle>
-					<techName>Docuneering BREX Test</techName>
-					<infoName>Descript DM</infoName>
-				</dmTitle>
-			</dmAddressItems>
-		</dmAddress>
-		<dmStatus issueType="changed">
-		   <security securityClassification="01" commercialClassification="cc01"/><!-- BREX TEST -->
-			<dataRestrictions>
-				<restrictionInstructions>
-					<dataDistribution>For Docuneering testing purposes only.</dataDistribution>
-				   <dataDisclosure></dataDisclosure><!-- BREX TEST -->
-				</restrictionInstructions>
-				<restrictionInfo>
-					<copyright>
-						<copyrightPara>Copyright (C) 2024 Docuneering Ltd., All rights reserved</copyrightPara>
-					</copyright>
-				</restrictionInfo>
-			</dataRestrictions>
-			<responsiblePartnerCompany enterpriseCode="X1234">
-				<enterpriseName>Docuneering Ltd</enterpriseName>
-			</responsiblePartnerCompany>
-			<originator enterpriseCode="X1234">
-				<enterpriseName>Docuneering Ltd</enterpriseName>
-			</originator>
-			<applic>
-				<displayText>
-					<simplePara>All</simplePara>
-				</displayText>
-			</applic>
-			<brexDmRef>
-				<dmRef>
-					<dmRefIdent>
-						<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-							assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" 
-							itemLocationCode="D"/>
-					</dmRefIdent>
-				</dmRef>
-			</brexDmRef>
-			<qualityAssurance>
-				<firstVerification verificationType="tabtop"/>
-			</qualityAssurance>
-		   <skillLevel skillLevelCode="sk04"/><!-- BREX TEST -->
-		</dmStatus>
-	</identAndStatusSection>
+   xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_4-2/xml_schema_flat/descript.xsd">
+   <identAndStatusSection>
+      <dmAddress>
+         <dmIdent>
+            <identExtension extensionProducer="X1234" extensionCode="12345"/><!-- BREX TEST -->
+            <dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+               assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="039" infoCodeVariant="A" 
+               itemLocationCode="A"/><!-- BREX TEST -->
+            <language countryIsoCode="US" languageIsoCode="en"/><!-- BREX TEST -->
+            <issueInfo issueNumber="001" inWork="00"/>
+         </dmIdent>
+         <dmAddressItems>
+            <issueDate day="31" month="12" year="2023"/>
+            <dmTitle>
+               <techName>Docuneering BREX Test</techName>
+               <infoName>Descript DM</infoName>
+            </dmTitle>
+         </dmAddressItems>
+      </dmAddress>
+      <dmStatus issueType="changed">
+         <security securityClassification="01" commercialClassification="cc01"/><!-- BREX TEST -->
+         <dataRestrictions>
+            <restrictionInstructions>
+               <dataDistribution>For Docuneering testing purposes only.</dataDistribution>
+               <dataDisclosure></dataDisclosure><!-- BREX TEST -->
+            </restrictionInstructions>
+            <restrictionInfo>
+               <copyright>
+                  <copyrightPara>Copyright (C) 2024 Docuneering Ltd., All rights reserved</copyrightPara>
+               </copyright>
+            </restrictionInfo>
+         </dataRestrictions>
+         <responsiblePartnerCompany enterpriseCode="X1234">
+            <enterpriseName>Docuneering Ltd</enterpriseName>
+         </responsiblePartnerCompany>
+         <originator enterpriseCode="X1234">
+            <enterpriseName>Docuneering Ltd</enterpriseName>
+         </originator>
+         <applic>
+            <displayText>
+               <simplePara>All</simplePara>
+            </displayText>
+         </applic>
+         <brexDmRef>
+            <dmRef>
+               <dmRefIdent>
+                  <dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+                     assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="022" infoCodeVariant="A" 
+                     itemLocationCode="D"/>
+               </dmRefIdent>
+            </dmRef>
+         </brexDmRef>
+         <qualityAssurance>
+            <firstVerification verificationType="tabtop"/>
+         </qualityAssurance>
+         <skillLevel skillLevelCode="sk04"/><!-- BREX TEST -->
+      </dmStatus>
+   </identAndStatusSection>
    <content><!-- BREX TEST -->
-		<!--<refs>
-			<dmRef>
-				<dmRefIdent>
-					<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="241" infoCodeVariant="A" itemLocationCode="A"/>
-				</dmRefIdent>
-			</dmRef>
-		</refs>-->
-		<description>
-			<levelledPara>
-				<title>S1000D Issue 4.2 - Descript</title>
-				<para>Some text.</para>
-			</levelledPara>
-		</description>
-	</content>
+      <!--<refs>
+         <dmRef>
+            <dmRefIdent>
+               <dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
+               assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="241" infoCodeVariant="A" itemLocationCode="A"/>
+            </dmRefIdent>
+         </dmRef>
+      </refs>-->
+      <description>
+         <levelledPara>
+            <title>S1000D Issue 4.2 - Descript</title>
+            <para>Some text.</para>
+         </levelledPara>
+      </description>
+   </content>
 </dmodule>

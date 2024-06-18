@@ -18,172 +18,172 @@
 <!DOCTYPE dmodule [
 ]>
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-	xmlns:xlink="http://www.w3.org/1999/xlink" 
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
-	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
-	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/brex.xsd">
-	<idstatus>
-		<dmaddres>
-			<dmc>
-				<avee>
-					<modelic>TEST23</modelic>
-					<sdc>A</sdc>
-					<chapnum>00</chapnum>
-					<section>0</section>
-					<subsect>0</subsect>
-					<subject>00</subject>
-					<discode>00</discode>
-					<discodev>A</discodev>
-					<incode>022</incode>
-					<incodev>A</incodev>
-					<itemloc>D</itemloc>
-				</avee>
-			</dmc>
-			<dmtitle>
-				<techname>TEST23</techname>
-				<infoname>Business rules</infoname>
-			</dmtitle>
-			<issno issno="001" inwork="00" type="new"/>
-			<issdate year="2023" month="12" day="31"/>
-		</dmaddres>
-		<status>
-			<security class="01"/>
-			<rpc rpcname="Docuneering Ltd">X1234</rpc>
-			<orig origname="Docuneering Ltd">X1234</orig>
-			<applic/>
-			<brexref>
-				<refdm>
-					<avee>
-						<modelic>TEST23</modelic>
-						<sdc>A</sdc>
-						<chapnum>00</chapnum>
-						<section>0</section>
-						<subsect>0</subsect>
-						<subject>00</subject>
-						<discode>00</discode>
-						<discodev>A</discodev>
-						<incode>022</incode>
-						<incodev>A</incodev>
-						<itemloc>D</itemloc>
-					</avee>
-					<issno issno="001"/>
-				</refdm>
-			</brexref>
-			<qa>
-				<firstver type="tabtop"/>
-			</qa>
-		</status>
-	</idstatus>
-	<content>
-		<brex>
-			<!-- Rules applicable to "descript" Schema -->
-			<contextrules context="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/descript.xsd">
-				<structrules>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- Element -->
-					<objrule>
-					   <objpath objappl="0">//dmaddres/dmcextension</objpath>
-					   <objuse>(Descript-01)-Element &lt;dmcextension&gt; must NOT be used</objuse>
-					</objrule>
-					<!-- Attribute -->
-					<objrule>
-						<objpath objappl="0">//security/@commcls</objpath>
-						<objuse>(Descript-02)-Attributes @commcls must NOT be used</objuse>
-					</objrule>
-					<!-- "1" - Yes, the object must be included in the context concerned -->
-					<!-- Element -->
-					<objrule>
-						<objpath objappl="1">//content/refs</objpath>
-						<objuse>(Descript-03)-Element &lt;refs&gt; MUST be used</objuse>
-					</objrule>
-					<!-- Attribute -->
-					<objrule>
-						<objpath objappl="1">//security/@caveat</objpath>
-						<objuse>(Descript-04)-Attribute @caveat MUST be used</objuse>
-					</objrule>
-					<!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<objrule>
-						<objpath>//dmaddres/dmc/avee/incode</objpath>
-						<objuse>(Descript-05)-Element &lt;incode&gt; - invalid value used.</objuse>
-					   <objval valtype="single" val1="018">Introduction</objval>
-					   <objval valtype="range" val1="040" val2="043">Use iaw S1000D Iss 2.3</objval>
-					</objrule>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- With a list of NOT ALLOWED values -->
-					<objrule>
-						<objpath objappl="0">//@language</objpath>
-						<objuse>(Descript-06)-Attribute @language must not be 'en'</objuse>
-						<objval valtype="single" val1="en"></objval>
-					</objrule>
-					<!-- Etc. -->
-					
-				</structrules>
-			</contextrules>
-			<!-- Rules applicable to "proced" Schema -->
-			<contextrules context="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/proced.xsd">
-				<structrules>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- Element -->
-					<objrule>
-						<objpath objappl="0">//content/refs</objpath>
-						<objuse>(Proced-01)-Element &lt;refs&gt; must NOT be used</objuse>
-					</objrule>
-					<!-- Attribute -->
-					<objrule>
-						<objpath objappl="0">//security/@caveat</objpath>
-						<objuse>(Proced-02)-Attribute @caveat must NOT be used</objuse>
-					</objrule>
-					<!-- "1" - Yes, the object must be included in the context concerned -->
-					<!-- Element -->
-					<objrule>
-					   <objpath objappl="1">//dmaddres/dmcextension</objpath>
-					   <objuse>(Proced-03)-Element &lt;dmcextension&gt; MUST be used</objuse>
-					</objrule>
-					<!-- Attribute -->
-					<objrule>
-					   <objpath objappl="1">//security/@commcls</objpath>
-					   <objuse>(Proced-04)-Attribute @commcls MUST be used</objuse>
-					</objrule>
-					<!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<!-- Attribute -->
-					<objrule>
-					   <objpath>//dmaddres/dmc/avee/incode</objpath>
-						<objuse>(Proced-05)-Element @incode - invalid value used.</objuse>
-					   <objval valtype="single" val1="520">Remove procedure</objval>
-					   <objval valtype="range" val1="720" val2="724">Use iaw S1000D Iss 2.3</objval>
-					   <objval valtype="single" val1="920">Remove and install procedure</objval>
-					</objrule>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<!-- With a list of NOT ALLOWED values -->
-					<objrule>
-						<objpath objappl="0">//@language</objpath>
-						<objuse>(Proced-06)-Attribute @language must not be 'sx'</objuse>
-						<objval valtype="single" val1="sx"></objval>
-					</objrule>
-					<!-- Etc. -->
-					
-				</structrules>
-			</contextrules>
-			<!-- Rules applicable to all Schemas -->
-			<contextrules>
-				<structrules>
-					<!-- "0" - No, the object must not be used in the context concerned -->
-					<objrule>
-						<objpath objappl="0">//instruct[not(matches(disclose, '^[\S]+'))]</objpath>
-						<objuse>(All-01)-If the &lt;instruct&gt; element is used, the &lt;disclose&gt; element is required and must have content (not blank).</objuse>
-					</objrule>
-				   <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
-					<objrule>
-						<objpath>//@skill</objpath>
-					   <objuse>(All-02)-Attribute @skill must be 'sk01', 'sk02' or 'sk03' only</objuse>
-						<objval valtype="single" val1="sk01">Basic</objval>
-						<objval valtype="single" val1="sk02">Medium</objval>
-						<objval valtype="single" val1="sk03">Advanced</objval>
-					</objrule>
-					<!-- Etc. -->
-					
-				</structrules>
-			</contextrules>
-		</brex>
-	</content>
+   xmlns:xlink="http://www.w3.org/1999/xlink" 
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+   xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+   xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/brex.xsd">
+   <idstatus>
+      <dmaddres>
+         <dmc>
+            <avee>
+               <modelic>TEST23</modelic>
+               <sdc>A</sdc>
+               <chapnum>00</chapnum>
+               <section>0</section>
+               <subsect>0</subsect>
+               <subject>00</subject>
+               <discode>00</discode>
+               <discodev>A</discodev>
+               <incode>022</incode>
+               <incodev>A</incodev>
+               <itemloc>D</itemloc>
+            </avee>
+         </dmc>
+         <dmtitle>
+            <techname>TEST23</techname>
+            <infoname>Business rules</infoname>
+         </dmtitle>
+         <issno issno="001" inwork="00" type="new"/>
+         <issdate year="2023" month="12" day="31"/>
+      </dmaddres>
+      <status>
+         <security class="01"/>
+         <rpc rpcname="Docuneering Ltd">X1234</rpc>
+         <orig origname="Docuneering Ltd">X1234</orig>
+         <applic/>
+         <brexref>
+            <refdm>
+               <avee>
+                  <modelic>TEST23</modelic>
+                  <sdc>A</sdc>
+                  <chapnum>00</chapnum>
+                  <section>0</section>
+                  <subsect>0</subsect>
+                  <subject>00</subject>
+                  <discode>00</discode>
+                  <discodev>A</discodev>
+                  <incode>022</incode>
+                  <incodev>A</incodev>
+                  <itemloc>D</itemloc>
+               </avee>
+               <issno issno="001"/>
+            </refdm>
+         </brexref>
+         <qa>
+            <firstver type="tabtop"/>
+         </qa>
+      </status>
+   </idstatus>
+   <content>
+      <brex>
+         <!-- Rules applicable to "descript" Schema -->
+         <contextrules context="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/descript.xsd">
+            <structrules>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- Element -->
+               <objrule>
+                  <objpath objappl="0">//dmaddres/dmcextension</objpath>
+                  <objuse>(Descript-01)-Element &lt;dmcextension&gt; must NOT be used</objuse>
+               </objrule>
+               <!-- Attribute -->
+               <objrule>
+                  <objpath objappl="0">//security/@commcls</objpath>
+                  <objuse>(Descript-02)-Attributes @commcls must NOT be used</objuse>
+               </objrule>
+               <!-- "1" - Yes, the object must be included in the context concerned -->
+               <!-- Element -->
+               <objrule>
+                  <objpath objappl="1">//content/refs</objpath>
+                  <objuse>(Descript-03)-Element &lt;refs&gt; MUST be used</objuse>
+               </objrule>
+               <!-- Attribute -->
+               <objrule>
+                  <objpath objappl="1">//security/@caveat</objpath>
+                  <objuse>(Descript-04)-Attribute @caveat MUST be used</objuse>
+               </objrule>
+               <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <objrule>
+                  <objpath>//dmaddres/dmc/avee/incode</objpath>
+                  <objuse>(Descript-05)-Element &lt;incode&gt; - invalid value used.</objuse>
+                  <objval valtype="single" val1="018">Introduction</objval>
+                  <objval valtype="range" val1="040" val2="043">Use iaw S1000D Iss 2.3</objval>
+               </objrule>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- With a list of NOT ALLOWED values -->
+               <objrule>
+                  <objpath objappl="0">//@language</objpath>
+                  <objuse>(Descript-06)-Attribute @language must not be 'en'</objuse>
+                  <objval valtype="single" val1="en"></objval>
+               </objrule>
+               <!-- Etc. -->
+               
+            </structrules>
+         </contextrules>
+         <!-- Rules applicable to "proced" Schema -->
+         <contextrules context="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/proced.xsd">
+            <structrules>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- Element -->
+               <objrule>
+                  <objpath objappl="0">//content/refs</objpath>
+                  <objuse>(Proced-01)-Element &lt;refs&gt; must NOT be used</objuse>
+               </objrule>
+               <!-- Attribute -->
+               <objrule>
+                  <objpath objappl="0">//security/@caveat</objpath>
+                  <objuse>(Proced-02)-Attribute @caveat must NOT be used</objuse>
+               </objrule>
+               <!-- "1" - Yes, the object must be included in the context concerned -->
+               <!-- Element -->
+               <objrule>
+                  <objpath objappl="1">//dmaddres/dmcextension</objpath>
+                  <objuse>(Proced-03)-Element &lt;dmcextension&gt; MUST be used</objuse>
+               </objrule>
+               <!-- Attribute -->
+               <objrule>
+                  <objpath objappl="1">//security/@commcls</objpath>
+                  <objuse>(Proced-04)-Attribute @commcls MUST be used</objuse>
+               </objrule>
+               <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <!-- Attribute -->
+               <objrule>
+                  <objpath>//dmaddres/dmc/avee/incode</objpath>
+                  <objuse>(Proced-05)-Element @incode - invalid value used.</objuse>
+                  <objval valtype="single" val1="520">Remove procedure</objval>
+                  <objval valtype="range" val1="720" val2="724">Use iaw S1000D Iss 2.3</objval>
+                  <objval valtype="single" val1="920">Remove and install procedure</objval>
+               </objrule>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <!-- With a list of NOT ALLOWED values -->
+               <objrule>
+                  <objpath objappl="0">//@language</objpath>
+                  <objuse>(Proced-06)-Attribute @language must not be 'sx'</objuse>
+                  <objval valtype="single" val1="sx"></objval>
+               </objrule>
+               <!-- Etc. -->
+               
+            </structrules>
+         </contextrules>
+         <!-- Rules applicable to all Schemas -->
+         <contextrules>
+            <structrules>
+               <!-- "0" - No, the object must not be used in the context concerned -->
+               <objrule>
+                  <objpath objappl="0">//instruct[not(matches(disclose, '^[\S]+'))]</objpath>
+                  <objuse>(All-01)-If the &lt;instruct&gt; element is used, the &lt;disclose&gt; element is required and must have content (not blank).</objuse>
+               </objrule>
+               <!-- "2" (D) - the object can optionally be used in the context concerned, however, fully in accordance with the specification text and the Schemas -->
+               <objrule>
+                  <objpath>//@skill</objpath>
+                  <objuse>(All-02)-Attribute @skill must be 'sk01', 'sk02' or 'sk03' only</objuse>
+                  <objval valtype="single" val1="sk01">Basic</objval>
+                  <objval valtype="single" val1="sk02">Medium</objval>
+                  <objval valtype="single" val1="sk03">Advanced</objval>
+               </objrule>
+               <!-- Etc. -->
+               
+            </structrules>
+         </contextrules>
+      </brex>
+   </content>
 </dmodule>

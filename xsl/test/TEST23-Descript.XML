@@ -16,102 +16,102 @@
    limitations under the License.
 =========================================================================================== -->
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/descript.xsd">
-	<idstatus>
-		<dmaddres>
-			<dmcextension><!-- BREX TEST -->
-				<dmeproducer>X1234</dmeproducer>
-				<dmecode>12345</dmecode>
-			</dmcextension>
-			<dmc>
-				<avee>
-					<modelic>TEST23</modelic>
-					<sdc>A</sdc>
-					<chapnum>00</chapnum>
-					<section>0</section>
-					<subsect>0</subsect>
-					<subject>00</subject>
-					<discode>00</discode>
-					<discodev>A</discodev>
-					<incode>039</incode><!-- BREX TEST -->
-					<incodev>A</incodev>
-					<itemloc>A</itemloc>
-				</avee>
-			</dmc>
-			<dmtitle>
-				<techname>Docuneering 2.3 BREX Test Data</techname>
-				<infoname>Descript DM</infoname>
-			</dmtitle>
-			<issno issno="001" inwork="00" type="changed"/>
-			<issdate year="2023" month="12" day="31"/>
-			<language language="en" country="US"/><!-- BREX TEST -->
-		</dmaddres>
-		<status>
-			<security class="01" commcls="cc01"/><!-- BREX TEST -->
-			<datarest>
-				<instruct>
-					<distrib>For Docuneering testing purposes only.</distrib>
-					<disclose></disclose><!-- BREX TEST -->
-				</instruct>
-				<inform>
-					<copyright>
-						<para>Copyright (C) 2024 Docuneering Ltd., All rights reserved</para>
-					</copyright>
-				</inform>
-			</datarest>
-			<rpc rpcname="Docuneering Ltd">X1234</rpc>
-			<orig origname="Docuneering Ltd">X1234</orig>
-			<applic/>
-			<brexref>
-				<refdm>
-					<avee>
-						<modelic>TEST23</modelic>
-						<sdc>A</sdc>
-						<chapnum>00</chapnum>
-						<section>0</section>
-						<subsect>0</subsect>
-						<subject>00</subject>
-						<discode>00</discode>
-						<discodev>A</discodev>
-						<incode>022</incode>
-						<incodev>A</incodev>
-						<itemloc>D</itemloc>
-					</avee>
-					<issno issno="001"/>
-				</refdm>
-			</brexref>
-			<qa>
-				<firstver type="tabtop"/>
-			</qa>
-			<skill skill="sk04"/><!-- BREX TEST -->
-		</status>
-	</idstatus>
-	<content><!-- BREX TEST -->
-		<!--<refs>
-			<refdm>
-				<avee>
-					<modelic>TEST23</modelic>
-					<sdc>A</sdc>
-					<chapnum>00</chapnum>
-					<section>0</section>
-					<subsect>0</subsect>
-					<subject>00</subject>
-					<discode>00</discode>
-					<discodev>A</discodev>
-					<incode>041</incode>
-					<incodev>A</incodev>
-					<itemloc>A</itemloc>
-				</avee>
-			</refdm>
-		</refs>-->
-		<descript>
-			<para0>
-				<title>S1000D Issue 2.3 - Descript</title>
-				<para>Some text.</para>
-			</para0>
-		</descript>
-	</content>
+   xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/descript.xsd">
+   <idstatus>
+      <dmaddres>
+         <dmcextension><!-- BREX TEST -->
+            <dmeproducer>X1234</dmeproducer>
+            <dmecode>12345</dmecode>
+         </dmcextension>
+         <dmc>
+            <avee>
+               <modelic>TEST23</modelic>
+               <sdc>A</sdc>
+               <chapnum>00</chapnum>
+               <section>0</section>
+               <subsect>0</subsect>
+               <subject>00</subject>
+               <discode>00</discode>
+               <discodev>A</discodev>
+               <incode>039</incode><!-- BREX TEST -->
+               <incodev>A</incodev>
+               <itemloc>A</itemloc>
+            </avee>
+         </dmc>
+         <dmtitle>
+            <techname>Docuneering 2.3 BREX Test Data</techname>
+            <infoname>Descript DM</infoname>
+         </dmtitle>
+         <issno issno="001" inwork="00" type="changed"/>
+         <issdate year="2023" month="12" day="31"/>
+         <language language="en" country="US"/><!-- BREX TEST -->
+      </dmaddres>
+      <status>
+         <security class="01" commcls="cc01"/><!-- BREX TEST -->
+         <datarest>
+            <instruct>
+               <distrib>For Docuneering testing purposes only.</distrib>
+               <disclose></disclose><!-- BREX TEST -->
+            </instruct>
+            <inform>
+               <copyright>
+                  <para>Copyright (C) 2024 Docuneering Ltd., All rights reserved</para>
+               </copyright>
+            </inform>
+         </datarest>
+         <rpc rpcname="Docuneering Ltd">X1234</rpc>
+         <orig origname="Docuneering Ltd">X1234</orig>
+         <applic/>
+         <brexref>
+            <refdm>
+               <avee>
+                  <modelic>TEST23</modelic>
+                  <sdc>A</sdc>
+                  <chapnum>00</chapnum>
+                  <section>0</section>
+                  <subsect>0</subsect>
+                  <subject>00</subject>
+                  <discode>00</discode>
+                  <discodev>A</discodev>
+                  <incode>022</incode>
+                  <incodev>A</incodev>
+                  <itemloc>D</itemloc>
+               </avee>
+               <issno issno="001"/>
+            </refdm>
+         </brexref>
+         <qa>
+            <firstver type="tabtop"/>
+         </qa>
+         <skill skill="sk04"/><!-- BREX TEST -->
+      </status>
+   </idstatus>
+   <content><!-- BREX TEST -->
+      <!--<refs>
+         <refdm>
+            <avee>
+               <modelic>TEST23</modelic>
+               <sdc>A</sdc>
+               <chapnum>00</chapnum>
+               <section>0</section>
+               <subsect>0</subsect>
+               <subject>00</subject>
+               <discode>00</discode>
+               <discodev>A</discodev>
+               <incode>041</incode>
+               <incodev>A</incodev>
+               <itemloc>A</itemloc>
+            </avee>
+         </refdm>
+      </refs>-->
+      <descript>
+         <para0>
+            <title>S1000D Issue 2.3 - Descript</title>
+            <para>Some text.</para>
+         </para0>
+      </descript>
+   </content>
 </dmodule>

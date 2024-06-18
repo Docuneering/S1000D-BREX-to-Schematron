@@ -16,130 +16,130 @@
    limitations under the License.
 =========================================================================================== -->
 <dmodule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:dc="http://www.purl.org/dc/elements/1.1/"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/proced.xsd">
-	<idstatus>
-		<dmaddres>
-		   <!-- BREX TEST -->
-		   <dmc>
-				<avee>
-					<modelic>TEST23</modelic>
-					<sdc>A</sdc>
-					<chapnum>00</chapnum>
-					<section>0</section>
-					<subsect>0</subsect>
-					<subject>00</subject>
-					<discode>00</discode>
-					<discodev>A</discodev>
-				   <incode>725</incode><!-- BREX TEST -->
-					<incodev>A</incodev>
-					<itemloc>A</itemloc>
-				</avee>
-			</dmc>
-			<dmtitle>
-				<techname>Docuneering 2.3 BREX Test Data</techname>
-				<infoname>Proced DM</infoname>
-			</dmtitle>
-			<issno issno="001" inwork="00" type="changed"/>
-			<issdate year="2023" month="12" day="31"/>
-		   <language language="sx" country="US"/><!-- BREX TEST -->
-		</dmaddres>
-		<status>
-		   <security class="01" caveat="cv01"/><!-- BREX TEST -->
-			<datarest>
-				<instruct>
-					<distrib>For Docuneering testing purposes only.</distrib>
-				   <!-- BREX TEST -->
-				</instruct>
-				<inform>
-					<copyright>
-						<para>Copyright (C) 2024 Docuneering Ltd., All rights reserved</para>
-					</copyright>
-				</inform>
-			</datarest>
-			<rpc rpcname="Docuneering Ltd">X1234</rpc>
-			<orig origname="Docuneering Ltd">X1234</orig>
-			<applic/>
-			<brexref>
-				<refdm>
-					<avee>
-						<modelic>TEST23</modelic>
-						<sdc>A</sdc>
-						<chapnum>00</chapnum>
-						<section>0</section>
-						<subsect>0</subsect>
-						<subject>00</subject>
-						<discode>00</discode>
-						<discodev>A</discodev>
-						<incode>022</incode>
-						<incodev>A</incodev>
-						<itemloc>D</itemloc>
-					</avee>
-					<issno issno="001"/>
-				</refdm>
-			</brexref>
-			<qa>
-				<firstver type="tabtop"/>
-			</qa>
-		   <skill skill="sk05"/><!-- BREX TEST -->
-		</status>
-	</idstatus>
+   xmlns:dc="http://www.purl.org/dc/elements/1.1/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xsi:noNamespaceSchemaLocation="http://www.s1000d.org/S1000D_2-3/xml_schema_flat/proced.xsd">
+   <idstatus>
+      <dmaddres>
+         <!-- BREX TEST -->
+         <dmc>
+            <avee>
+               <modelic>TEST23</modelic>
+               <sdc>A</sdc>
+               <chapnum>00</chapnum>
+               <section>0</section>
+               <subsect>0</subsect>
+               <subject>00</subject>
+               <discode>00</discode>
+               <discodev>A</discodev>
+               <incode>725</incode><!-- BREX TEST -->
+               <incodev>A</incodev>
+               <itemloc>A</itemloc>
+            </avee>
+         </dmc>
+         <dmtitle>
+            <techname>Docuneering 2.3 BREX Test Data</techname>
+            <infoname>Proced DM</infoname>
+         </dmtitle>
+         <issno issno="001" inwork="00" type="changed"/>
+         <issdate year="2023" month="12" day="31"/>
+         <language language="sx" country="US"/><!-- BREX TEST -->
+      </dmaddres>
+      <status>
+         <security class="01" caveat="cv01"/><!-- BREX TEST -->
+         <datarest>
+            <instruct>
+               <distrib>For Docuneering testing purposes only.</distrib>
+               <!-- BREX TEST -->
+            </instruct>
+            <inform>
+               <copyright>
+                  <para>Copyright (C) 2024 Docuneering Ltd., All rights reserved</para>
+               </copyright>
+            </inform>
+         </datarest>
+         <rpc rpcname="Docuneering Ltd">X1234</rpc>
+         <orig origname="Docuneering Ltd">X1234</orig>
+         <applic/>
+         <brexref>
+            <refdm>
+               <avee>
+                  <modelic>TEST23</modelic>
+                  <sdc>A</sdc>
+                  <chapnum>00</chapnum>
+                  <section>0</section>
+                  <subsect>0</subsect>
+                  <subject>00</subject>
+                  <discode>00</discode>
+                  <discodev>A</discodev>
+                  <incode>022</incode>
+                  <incodev>A</incodev>
+                  <itemloc>D</itemloc>
+               </avee>
+               <issno issno="001"/>
+            </refdm>
+         </brexref>
+         <qa>
+            <firstver type="tabtop"/>
+         </qa>
+         <skill skill="sk05"/><!-- BREX TEST -->
+      </status>
+   </idstatus>
    <content><!-- BREX TEST -->
-		<refs>
-			<refdm>
-				<avee>
-					<modelic>TEST23</modelic>
-					<sdc>A</sdc>
-					<chapnum>00</chapnum>
-					<section>0</section>
-					<subsect>0</subsect>
-					<subject>00</subject>
-					<discode>00</discode>
-					<discodev>A</discodev>
-					<incode>041</incode>
-					<incodev>A</incodev>
-					<itemloc>A</itemloc>
-				</avee>
-			</refdm>
-		</refs>
-		<proced>
-			<prelreqs>
-				<reqconds>
-					<noconds/>
-				</reqconds>
-				<reqpers>
-					<person man="A"/>
-					<perscat category="Chemical technician"/>
-					<perskill skill="sk02"/>
-					<trade>Bike cleaner</trade>
-					<esttime>1,0 hour</esttime>
-				</reqpers>
-				<supequip>
-					<nosupeq/>
-				</supequip>
-				<supplies>
-					<nosupply/>
-				</supplies>
-				<spares>
-					<nospares/>
-				</spares>
-				<safety>
-					<nosafety/>
-				</safety>
-			</prelreqs>
-			<mainfunc>
-				<step1>
-					<title>S1000D Issue 2.3 - Proced</title>
-					<para>Some text.</para>
-				</step1>
-			</mainfunc>
-			<closereqs>
-				<reqconds>
-					<noconds/>
-				</reqconds>
-			</closereqs>
-		</proced>
-	</content>
+      <refs>
+         <refdm>
+            <avee>
+               <modelic>TEST23</modelic>
+               <sdc>A</sdc>
+               <chapnum>00</chapnum>
+               <section>0</section>
+               <subsect>0</subsect>
+               <subject>00</subject>
+               <discode>00</discode>
+               <discodev>A</discodev>
+               <incode>041</incode>
+               <incodev>A</incodev>
+               <itemloc>A</itemloc>
+            </avee>
+         </refdm>
+      </refs>
+      <proced>
+         <prelreqs>
+            <reqconds>
+               <noconds/>
+            </reqconds>
+            <reqpers>
+               <person man="A"/>
+               <perscat category="Chemical technician"/>
+               <perskill skill="sk02"/>
+               <trade>Bike cleaner</trade>
+               <esttime>1,0 hour</esttime>
+            </reqpers>
+            <supequip>
+               <nosupeq/>
+            </supequip>
+            <supplies>
+               <nosupply/>
+            </supplies>
+            <spares>
+               <nospares/>
+            </spares>
+            <safety>
+               <nosafety/>
+            </safety>
+         </prelreqs>
+         <mainfunc>
+            <step1>
+               <title>S1000D Issue 2.3 - Proced</title>
+               <para>Some text.</para>
+            </step1>
+         </mainfunc>
+         <closereqs>
+            <reqconds>
+               <noconds/>
+            </reqconds>
+         </closereqs>
+      </proced>
+   </content>
 </dmodule>
