@@ -23,11 +23,11 @@
 	<identAndStatusSection>
 		<dmAddress>
 			<dmIdent>
-				<identExtension extensionProducer="X1234" extensionCode="12345"/><!-- TEST BREX -->
+			   <identExtension extensionProducer="X1234" extensionCode="12345"/><!-- BREX TEST -->
 				<dmCode modelIdentCode="TEST42" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" 
-					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="520" infoCodeVariant="A" 
+					assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="039" infoCodeVariant="A" 
 					itemLocationCode="A"/><!-- BREX TEST -->
-				<language countryIsoCode="US" languageIsoCode="en"/><!-- TEST BREX -->
+			   <language countryIsoCode="US" languageIsoCode="en"/><!-- BREX TEST -->
 				<issueInfo issueNumber="001" inWork="00"/>
 			</dmIdent>
 			<dmAddressItems>
@@ -39,11 +39,11 @@
 			</dmAddressItems>
 		</dmAddress>
 		<dmStatus issueType="changed">
-			<security securityClassification="01" commercialClassification="cc01"/><!-- TEST BREX -->
+		   <security securityClassification="01" commercialClassification="cc01"/><!-- BREX TEST -->
 			<dataRestrictions>
 				<restrictionInstructions>
 					<dataDistribution>For Docuneering testing purposes only.</dataDistribution>
-					<dataDisclosure></dataDisclosure><!-- TEST BREX -->
+				   <dataDisclosure></dataDisclosure><!-- BREX TEST -->
 				</restrictionInstructions>
 				<restrictionInfo>
 					<copyright>
@@ -74,10 +74,10 @@
 			<qualityAssurance>
 				<firstVerification verificationType="tabtop"/>
 			</qualityAssurance>
-			<skillLevel skillLevelCode="sk04"/><!-- TEST BREX -->
+		   <skillLevel skillLevelCode="sk04"/><!-- BREX TEST -->
 		</dmStatus>
 	</identAndStatusSection>
-	<content><!-- TEST BREX -->
+   <content><!-- BREX TEST -->
 		<!--<refs>
 			<dmRef>
 				<dmRefIdent>
