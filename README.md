@@ -23,7 +23,7 @@ Please contact [Docuneering Ltd.](https://www.docuneering.com/contact/) for deta
 ---
 ## Convertion Process
 
-The simplest way to convert an S1000D BREX file to Schematron is to use Saxon and the commend line.
+The simplest way to convert an S1000D BREX file to Schematron is to use Saxon and the command line.
 
 ### Command line
 
